@@ -15,6 +15,7 @@ body {
 
 button {
 	margin: auto;
+	text-align: center;
 	width: 5rem;
 }
 
