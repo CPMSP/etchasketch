@@ -4,7 +4,7 @@ const clear = document.querySelector('#clear');
 
 const defaultSide = 16;
 
-const startUp = () => {
+const start = () => {
 	app.innerHTML = '';
 	for (i = 0; i < defaultSide ** 2; i++) {
 		const square = document.createElement('div');
@@ -43,6 +43,6 @@ const newGrid = () => {
 };
 
 resize.addEventListener('click', newGrid);
-clear.addEventListener('click', startUp);
+clear.addEventListener('click', start);
 
-startUp();
+start();
