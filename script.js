@@ -9,8 +9,8 @@ const start = () => {
 	for (i = 0; i < defaultSide ** 2; i++) {
 		const square = document.createElement('div');
 		square.classList.add('square');
-		app.style.gridTemplateColumns = `repeat(16, 1fr)`;
-		app.style.gridTemplateRows = `repeat(16, 1fr)`;
+		app.style.gridTemplateColumns = `repeat(${defaultSide}, 1fr)`;
+		app.style.gridTemplateRows = `repeat(${defaultSide}, 1fr)`;
 		square.id = `${i}`;
 		app.appendChild(square);
 		square.addEventListener('mouseenter', () => {
